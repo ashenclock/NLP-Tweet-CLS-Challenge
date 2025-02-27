@@ -20,3 +20,4 @@ This repository contains code and datasets for two tweet classification tasks:
    - For irony detection: run `irony_submission.ipynb`.
    - For emotion classification: run `emotion_submission.ipynb`.
 2. **Make predictions** using the fine-tuned model and save results
+
