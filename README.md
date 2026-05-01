@@ -1,23 +1,36 @@
-# NLP Tweet Classification 
+# 🐦 NLP Tweet Classification Challenge
 
-This repository contains code and datasets for two tweet classification tasks:
+NLP project for tweet classification on two tasks:
 
-- **Irony Detection**: Classifying tweets as ironic (1) or non-ironic (0).
-- **Emotion Classification**: Classifying tweets into one of the following emotion categories:
-  - **0**: Anger
-  - **1**: Joy
-  - **2**: Optimism
-  - **3**: Sadness
+1. **Irony detection** (binary)
+2. **Emotion classification** (4 classes)
 
-## Models and Techniques Used
+## 🧠 Labels
 
-- **Fine-tuning** of NLP models for both tasks.
-- **Data Augmentation** for the emotion task, generating paraphrases using DeepSeek-V3 to address class imbalance.
+Emotion mapping:
 
-## Usage Instructions
+- `0`: Anger
+- `1`: Joy
+- `2`: Optimism
+- `3`: Sadness
 
-1. **Run the training notebook** for the desired task:
-   - For irony detection: run `irony_submission.ipynb`.
-   - For emotion classification: run `emotion_submission.ipynb`.
-2. **Make predictions** using the fine-tuned model and save results
+## ⚙️ Approach
+
+- Transformer fine-tuning for both tasks
+- Data augmentation pipeline for class balancing (`data_augmentation_process.ipynb`)
+- Separate notebooks for each submission workflow
+
+## 📁 Main Files
+
+- `irony_submission.ipynb`
+- `emotion_submission.ipynb`
+- `data_augmentation_process.ipynb`
+- `irony/`, `emotion/`, and `predictions/` folders
+
+## 🚀 How to use
+
+1. Prepare your Python/Jupyter environment
+2. Open the notebook for the target task
+3. Run training + inference cells
+4. Export predictions in the required challenge format
 
